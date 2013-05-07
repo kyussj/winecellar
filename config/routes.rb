@@ -1,8 +1,9 @@
 Winecellar::Application.routes.draw do
-  get "home_pages/home"
-
-  get "home_pages/help"
-  get "home_pages/about"
+  root to: 'home_pages#home'
+  
+  match '/help',    to: 'home_pages#help'
+  match '/about',   to: 'home_pages#about'
+  match '/contact', to: 'home_pages#contact'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
