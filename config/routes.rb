@@ -1,4 +1,9 @@
 Winecellar::Application.routes.draw do
+  get "home_pages/home"
+
+  get "home_pages/help"
+  get "home_pages/about"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
